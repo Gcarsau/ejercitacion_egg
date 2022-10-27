@@ -14,20 +14,28 @@ import java.util.Scanner;
 public class actividad_10 {
 
     /**
-     * @param args the command line arguments
+     * Escriba un programa en el cual se ingrese un valor límite positivo, y a
+     * continuación solicite números al usuario hasta que la suma de los números
+     * introducidos supere el límite inicial.
      */
     public static void main(String[] args) {
-       int num,num_1;
-       Scanner  Scanner = new Scanner(System.in);
-       do{ System.out.println("ingrese un numero");
-          num = Scanner.nextInt();
-           num_1 = Scanner.nextInt();
-       if (num == 100 )
-               System.out.println("la suma debe superar al limite");
-            num = Scanner.nextInt();
-           num_1 = Scanner.nextInt();
- 
-   } while (num > 100 );
-       { System.out.println(num + num_1 );}
- 
+        int limitePositivo;
+        int num;
+        int suma;
+
+        Scanner scanner = new Scanner(System.in);
+        suma = 0;
+
+        System.out.println("Ingrese limite");
+        limitePositivo = scanner.nextInt();
+
+        do {
+            System.out.println("El resultado de la suma hasta ahora es " + suma);
+
+            System.out.println("Ingrese numero a sumar");
+            num = scanner.nextInt();
+            suma = suma + num;
+        } while (limitePositivo > suma);
+
+    }
 }

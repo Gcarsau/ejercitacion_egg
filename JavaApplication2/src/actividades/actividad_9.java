@@ -17,16 +17,16 @@ public class actividad_9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    String letra;
+        String letra;
         Scanner scanner = new Scanner(System.in);
         System.out.println("ingrese el usuario ");
         letra = scanner.nextLine();
         if (letra.toLowerCase().startsWith("a")) {
             System.out.println("correcto ");
-            
 
-        }else{
-             System.out.println("incorrecto");
+        } else {
+            System.out.println("incorrecto");
+        }
+
     }
-    
 }
