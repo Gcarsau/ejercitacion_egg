@@ -14,7 +14,7 @@ pantalla.
         System.out.println("Ingresa nombre");
         
         nombre = scanner.next();
-        
+       
         System.out.println("El nombre ingresado fue "+ nombre);
         
         
